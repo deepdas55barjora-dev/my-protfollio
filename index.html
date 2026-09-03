@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Solutions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .package-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .package-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .packages {
+            display: none;
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .packages h2 {
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+        .package-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 35px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0b1120;
+            color: white;
+        }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            header {
+                padding: 15px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Deep Solutions</div>
+
+        <button class="package-btn" onclick="showPackages()">
+            Packages
+        </button>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Deep Solutions</h1>
+        <p>Digital Marketing & Business Growth Solutions</p>
+    </section>
+
+    <section class="packages" id="packages">
+
+        <h2>Our Packages</h2>
+
+        <div class="package-container">
+
+            <!-- 7 Days Package -->
+            <div class="card">
+                <h3>7 Days Package</h3>
+
+                <div class="price">₹999</div>
+
+                <ul>
+                    <li>✓ Facebook Marketing</li>
+                    <li>✓ Instagram Marketing</li>
+                    <li>✓ Professional Post Design</li>
+                    <li>✓ Basic Promotion</li>
+                    <li>✓ WhatsApp Support</li>
+                </ul>
+
+                <a class="contact-btn"
+                   href="tel:8509097237">
+                    Contact Now
+                </a>
+            </div>
+
+
+            <!-- 30 Days Package -->
+            <div class="card">
+                <h3>30 Days Package</h3>
+
+                <div class="price">₹3500</div>
+
+                <ul>
+                    <li>✓ Facebook Marketing</li>
+                    <li>✓ Instagram Marketing</li>
+                    <li>✓ Professional Post Design</li>
+                    <li>✓ Lead Generation</li>
+                    <li>✓ Business Promotion</li>
+                    <li>✓ WhatsApp Support</li>
+                </ul>
+
+                <a class="contact-btn"
+                   href="tel:8509097237">
+                    Contact Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact">
+
+        <h2>Contact Deep Solutions</h2>
+
+        <p>📞 8509097237</p>
+
+        <p>📍 Barjora / Bankura</p>
+
+    </section>
+
+
+    <footer>
+        © 2026 Deep Solutions. All Rights Reserved.
+    </footer>
+
+
+    <script>
+
+        function showPackages() {
+
+            const packages = document.getElementById("packages");
+
+            packages.style.display = "block";
+
+            packages.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
